@@ -1,0 +1,14 @@
+<div class="container mt-5 p-5 shadow-sm bg-light">
+  <h1>Create a new restaurant</h1>
+
+  <%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category %>
+    <%= f.submit class: "btn btn-primary" %>
+  <% end %>
+
+  <%= link_to "Back", restaurants_path, class: "btn btn-light mt-5"%>
+
+</div>
